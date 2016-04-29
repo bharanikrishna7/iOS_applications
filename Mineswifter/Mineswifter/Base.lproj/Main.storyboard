@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Mineswifter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <view opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Q0S-Jx-MHD">
+                                <rect key="frame" x="20" y="143" width="280" height="373"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.88194444439999997" green="0.88194444439999997" blue="0.88194444439999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="dIc-uD-5VR">
+                                <rect key="frame" x="0.0" y="529" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="New Game" id="zSv-3E-GoJ">
+                                        <connections>
+                                            <action selector="newGamePressed:" destination="vXZ-lx-hvc" id="xJt-g6-6zl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.955669981" green="0.955669981" blue="0.955669981" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" id="kNX-tw-jwf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95566998101616163" green="0.95566998101616163" blue="0.95566998101616163" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <navigationBar userInteractionEnabled="NO" contentMode="scaleToFill" id="IO2-Hm-G6w">
+                                <rect key="frame" x="0.0" y="18" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.88194444439999997" green="0.88194444439999997" blue="0.88194444439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.955669981" green="0.955669981" blue="0.955669981" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="MINESWEEPER" id="rEx-zJ-KSo"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game can be completed by marking all the mines" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hve-6C-dwT">
+                                <rect key="frame" x="32" y="81" width="257" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or by revealing all non-mine squares" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GCK-dv-dqp">
+                                <rect key="frame" x="32" y="99" width="257" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88194444439999997" green="0.88194444439999997" blue="0.88194444439999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="boardView" destination="Q0S-Jx-MHD" id="bJF-ec-pI1"/>
+                        <outlet property="newGameButton" destination="zSv-3E-GoJ" id="iSS-7v-9SB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="128"/>
+        </scene>
+    </scenes>
+</document>
